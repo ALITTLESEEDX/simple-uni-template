@@ -1,1 +1,1 @@
-import request from '@/interceptors/request'
+import request from './request'
