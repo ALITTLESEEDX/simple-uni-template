@@ -1,8 +1,19 @@
+import path from 'node:path'
+import process from 'node:process'
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
+import { loadEnv } from 'vite'
+
+// 获取环境变量的范例
+const env = loadEnv(process.env.NODE_ENV!, path.resolve(process.cwd(), 'env'))
+const {
+  VITE_APP_TITLE,
+  VITE_UNI_APPID,
+  VITE_WX_APPID,
+} = env
 
 export default defineManifestConfig({
-  'name': 'simple-uni-template',
-  'appid': '',
+  'name': VITE_APP_TITLE,
+  'appid': VITE_UNI_APPID,
   'description': '',
   'versionName': '1.0.0',
   'versionCode': '100',
@@ -52,7 +63,7 @@ export default defineManifestConfig({
   'quickapp': {},
   /* 小程序特有相关 */
   'mp-weixin': {
-    appid: '',
+    appid: VITE_WX_APPID,
     setting: {
       urlCheck: false,
     },

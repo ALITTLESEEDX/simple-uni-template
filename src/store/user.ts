@@ -1,10 +1,12 @@
 import { defineStore } from 'pinia'
 
 
-export const useStore = defineStore('main', {
+export const useUserStore = defineStore('user', {
   state() {
     return {
-      state: {}
+      isLogin: false,
+      state: {
+      }
     }
   },
   actions: {

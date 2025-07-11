@@ -1,8 +1,20 @@
 {
   "pages": [
     {
-      "path": "pages/index",
-      "type": "home"
+      "path": "pages/index/index",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "type": "page"
+    },
+    {
+      "path": "pages/need-login/index",
+      "type": "page",
+      "needLogin": true
     }
   ],
   "globalStyle": {
@@ -12,7 +24,7 @@
     "backgroundTextStyle": "@bgTxtStyle",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "@navTxtStyle",
-    "navigationBarTitleText": "Vitesse-Uni",
+    "navigationBarTitleText": "simple-uni-template",
     "navigationStyle": "custom"
   },
   "__esModule": true,

@@ -1,12 +1,7 @@
-<!-- src/App.ku.vue | App.ku.vue -->
-
 <script setup lang="ts">
 import { useTheme } from './composables/useTheme';
 
-const { theme, themeVars } = useTheme({
-  buttonPrimaryBgColor: '#07c160',
-  buttonPrimaryColor: '#07c160',
-});
+const { theme, themeVars } = useTheme({});
 </script>
 
 <template>

@@ -1,14 +1,6 @@
-<p align="center">
-  <img src="https://github.com/uni-helper/vitesse-uni-app/raw/main/.github/images/preview.png" width="300"/>
-</p>
-
 <h2 align="center">
-Vitesse for uni-app
+Simple Uni Template
 </h2>
-<p align="center">
-  <a href="https://vitesse-uni-app.netlify.app/">📱 在线预览</a>
-  <a href="https://vitesse-docs.netlify.app/">📖 阅读文档</a>
-</p>
 
 ## 特性
 
@@ -18,7 +10,9 @@ Vitesse for uni-app
 
 - 📦 [组件自动化加载](./src/components)
 
-- 📑 [布局系统](./src/layouts)
+- 📑 [虚拟根组件](https://github.com/uni-ku/root)
+
+- 📑 [分页组件 z-paging](https://z-paging.zxlee.cn/)
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 
@@ -28,4 +22,4 @@ Vitesse for uni-app
 
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
-- 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
+- 🦾 [TypeScript](https://www.typescriptlang.org/) & [Prettier](https://prettier.io/) - 保证代码质量

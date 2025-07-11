@@ -3,6 +3,7 @@
 import type { ConfigProviderThemeVars } from 'wot-design-uni'
 import { ref } from 'vue'
 
+
 const theme = ref<'light' | 'dark'>()
 const themeVars = ref<ConfigProviderThemeVars>()
 

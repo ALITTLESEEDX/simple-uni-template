@@ -1,13 +1,13 @@
 import { createSSRApp } from 'vue'
 import App from './App.vue'
-import 'uno.css'
 import * as Pinia from 'pinia'
 import { createUnistorage } from 'pinia-plugin-unistorage'
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn'
 import relativeTime from 'dayjs/plugin/relativeTime';
 import localizedFormat from 'dayjs/plugin/LocalizedFormat';
-
+import { routeInterceptor } from '@/utils/permission'
+import 'virtual:uno.css'
 
 export function createApp() {
   const app = createSSRApp(App)
@@ -17,6 +17,7 @@ export function createApp() {
   const store = Pinia.createPinia()
   store.use(createUnistorage())
   app.use(store)
+  app.use(routeInterceptor)
   return {
     app,
   }
